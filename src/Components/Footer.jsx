@@ -5,6 +5,7 @@ const Footer = () => {
     <div className=" pt-10 px-4 bg-gray-900 md:px-20 lg:px-32 w-full overflow-hidden">
       <div className="container mx-auto flex flex-col justify-around md:flex-row items-start">
         <div className="w-full md:w-1/2 mb-8 md:mb-0">
+        
           <h2 className="text-gray-200 text-2xl font-bold">The Mod Barn</h2>
           <p className="text-gray-400 mt-4">
             Providing innovative wall bed solutions with quality, functionality,
