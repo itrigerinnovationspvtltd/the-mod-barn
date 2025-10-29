@@ -36,21 +36,27 @@ const Testimonals = () => {
       transition={{duration:1}}
       whileInView={{opacity:1, x:0}}
       viewport={{once: true}}
-    id='testimonials' className='container mx-auto py-10 lg:px-32 w-full overflow-hidden'>
-      <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>Customer <span className='underline underline-offset-4 decoration-1 font-light'>Testimonials</span></h1>
-      <p className='text-center text-gray-500 mb-12 max-w-80 mx-auto'>Real Experiences From Those Who Found Smart Living With Our Wall Beds</p>
-
+    id='testimonials' className='container mx-auto py-24 lg:px-32 w-full overflow-hidden bg-white'>
+        <div className="text-center mb-20">
+       <h2 className="text-5xl font-bold text-[#172128] mb-6">
+          Customer Testimonials
+        </h2>
+      <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          Real Experiences From Those Who Found Smart Living With Our Wall Beds
+        </p>
+</div>
     <div className='flex flex-wrap justify-center gap-8'>
         {testimonialsData.map((testimonial, index)=> (
-            <div key={index} className='max-w-[340px] border shadow-lg rounded px-8 py-12 text-center'>
+            <div key={index} className='max-w-[340px] border shadow-xl rounded-2xl px-8 py-12 text-center bg-slate-50 hover:shadow-2xl transition-all duration-300"
+          '>
                 <img src={testimonial.image} alt={testimonial.alt} className='w-20 h-20 rounded-full mx-auto mb-4'/>
-                <h2 className='text-xl text-gray-700 font-medium'>{testimonial.name}</h2>
+                <h2 className='text-2xl text-gray-800 font-semibold mb-2'>{testimonial.name}</h2>
                 <div className='flex justify-center gap-1 text-red-500 mb-4'>
                     {Array.from({length: testimonial.rating}, (item, index) =>(
                         <img key={index} src= {star_icon} alt="" />
                     ))}
                 </div>
-                <p className='text-gray-600'>{testimonial.text}</p>
+                <p className='text-gray-600 text-lg leading-relaxed'>{testimonial.text}</p>
             </div>
         ))}
     </div>

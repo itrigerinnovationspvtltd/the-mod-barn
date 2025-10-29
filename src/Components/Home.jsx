@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div className='min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden opacity-90' style={{backgroundImage: "url('/Homebg.webp')"}} id='home'>
+    <div className='min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden opacity-90 shadow-xl' style={{backgroundImage: "url('/Homebg.webp')"}} id='home'>
 
       <motion.div
       initial={{opacity: 0, y:100}}

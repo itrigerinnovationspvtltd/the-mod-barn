@@ -16,60 +16,64 @@ const Contact = () => {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       id="contact"
-      className="text-center p-6 py-20 lg:px-32 w-full overflow-hidden"
+      className=" p-6 py-24 lg:px-32 w-full overflow-hidden bg-slate-50"
     >
-      <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center">
-        Contact{" "}
-        <span className="underline underline-offset-4 decoration-1 font-light">
-          With Us
-        </span>
-      </h1>
-      <p className="text-center text-gray-500 mb-12 max-w-80 mx-auto">
-        Ready To Make A Move? Let's Build YOur Future Together
-      </p>
+
+      <div className="text-center mb-20">
+        <h2 className="text-5xl font-bold text-[#172128] mb-6">
+          Contact With Us
+        </h2>
+        <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          Ready to make a move? Let’s build your dream space together — we’d love to hear from you.
+        </p>
+      </div>
+
 
       <form
         onSubmit={handleSubmit}
-        className="max-w-2xl mx-auto text-gray-600 pt-8"
+        className="max-w-2xl mx-auto text-gray-700 bg-white p-8 rounded-2xl shadow-xl"
       >
-        <div className="flex flex-wrap">
-          <div className="w-full md:w-1/2 text-left">
-            Your Name
+        <div className="flex flex-wrap gap-6">
+          <div className="w-full md:w-[48%] text-left">
+            <label className="block text-lg font-medium mb-2">Your Name</label>
             <input
               type="text"
               name="Name"
-              placeholder="Your Name"
+              placeholder="Enter your name"
               required
-              className="w-full border border-gray-300 rounded py-3 px-4 mt-2"
+              className="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
             />
           </div>
-          <div className="w-full md:w-1/2 text-left md:pl-4">
-            Your Name
+          <div className="w-full md:w-[48%] text-left">
+            <label className="block text-lg font-medium mb-2">Your Email</label>
             <input
               type="email"
               name="Email"
-              placeholder="Your Email"
+              placeholder="Enter your email"
               required
-              className="w-full border border-gray-300 rounded py-3 px-4 mt-2"
+              className="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
             />
           </div>
         </div>
+
         <div className="text-left my-6">
-          Message
+          <label className="block text-lg font-medium mb-2">Message</label>
           <textarea
             name="Message"
-            placeholder="Message"
+            placeholder="Write your message..."
             required
-            className="w-full border border-gray-300 rounded py-3 px-4 mt-2 h-48 resize-none"
+            className="w-full border border-gray-300 rounded-lg py-3 px-4 h-48 resize-none focus:outline-none focus:ring-2 focus:ring-blue-600"
           ></textarea>
         </div>
-        <button
-          type="submit"
-          className="bg-blue-600 text-white py-2 px-12 mb-10 rounded"
-        >
-          {" "}
-          Send Message{" "}
-        </button>
+
+        <div className="text-center mt-10">
+          <button
+            type="submit"
+            className="bg-blue-600 text-white text-lg font-semibold py-3 px-12 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300"
+          >
+            Send Message
+          </button>
+        </div>
       </form>
     </motion.div>
   );

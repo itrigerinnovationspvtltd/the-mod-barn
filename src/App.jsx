@@ -1,9 +1,10 @@
 import './App.css'
-import Contact from './Components/Contact'
-import Features from './Components/Features'
-import Home from './Components/Home'
 import Navbar from './Components/Navbar'
+import Home from './Components/Home'
+import Features from './Components/Features'
 import Testimonals from './Components/Testimonials'
+import Contact from './Components/Contact'
+import Gallery from './Components/Gallery'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Navbar/>
         <Home/>
         <Features/>
+        <Gallery/>
         <Testimonals/>
         <Contact/>
         </div>
