@@ -66,7 +66,7 @@ const  Gallery = ()=>  {
       transition={{duration:1}}
       whileInView={{opacity:1, x:0}}
       viewport={{once: true}}
-    className="py-24 bg-slate-50">
+    className="py-24 bg-slate-50" id='gallery'>
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-20">
           <h2 className="text-5xl font-bold text-[#172128] mb-6">

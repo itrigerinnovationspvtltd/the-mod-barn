@@ -20,9 +20,9 @@ const Navbar = () => {
 
   return (
     // Navbar container fixed at top with z-index for layering
-    <div className="absolute md:fixed top-0 left-0 w-full z-50 shadow-md">
+    <div className="absolute md:fixed top-0 left-0 w-full z-50">
       {/* Main Navbar section */}
-      <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-gray-900 opacity-90 backdrop-blur-sm rounded-full mt-2 md:h-20">
+      <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-gray-900 opacity-90 backdrop-blur-sm  shadow-2xl rounded-full mt-2 md:h-20">
         {/* Logo or brand name */}
         <a href="#" className="text-white text-xl font-bold">DemoDomain</a>
 
