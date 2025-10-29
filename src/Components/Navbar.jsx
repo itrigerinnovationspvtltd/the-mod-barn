@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import menu_icon from '../assets/menu-icon.svg'
+import cross_icon from '../assets/cross-icon.svg'
 
 const Navbar = () => {
   // State to control mobile menu visibility
@@ -18,7 +20,7 @@ const Navbar = () => {
 
   return (
     // Navbar container fixed at top with z-index for layering
-    <div className="fixed top-0 left-0 w-full z-50 shadow-md">
+    <div className="absolute md:fixed top-0 left-0 w-full z-50 shadow-md">
       {/* Main Navbar section */}
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-gray-900 opacity-90 backdrop-blur-sm rounded-full mt-2 md:h-20">
         {/* Logo or brand name */}
@@ -33,16 +35,16 @@ const Navbar = () => {
         </ul>
 
         {/* Contact us button (visible only on larger screens) */}
-        <button className="hidden md:block bg-white text-black px-8 py-2 rounded-full font-bold hover:bg-gray-200 transition text-xl">
+        <button className="hidden lg:block bg-white text-black px-8 py-2 rounded-full font-bold hover:bg-gray-200 transition text-xl">
           <a href="#contact">Contact Us</a>
           
         </button>
 
         {/* Mobile Menu Icon */}
         <img
-          src=""
+          src={menu_icon}
           onClick={() => setShowMobileMenu(true)}
-          className="md:hidden w-7 cursor-pointer invert"
+          className="md:hidden w-7 cursor-pointer invert text-white"
           alt="menu icon"
         />
       </div>
@@ -50,12 +52,12 @@ const Navbar = () => {
       {/* Mobile Menu Section */}
       <div
         className={`md:hidden ${showMobileMenu ? 'fixed w-full h-full' : 'h-0 w-0'}
-                    right-0 top-0 bottom-0 overflow-hidden bg-black bg-opacity-90 transition-all duration-300`}
+                    right-0 top-0 bottom-0 overflow-hidden bg-black opacity-90 transition`}
       >
         {/* Close button */}
         <div className="flex justify-end p-6 cursor-pointer">
           <img
-            src=""
+            src={cross_icon}
             onClick={() => setShowMobileMenu(false)}
             className="w-6 invert"
             alt="close icon"
