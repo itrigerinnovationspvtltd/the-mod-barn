@@ -6,6 +6,8 @@ import Testimonals from './Components/Testimonials'
 import Contact from './Components/Contact'
 import Gallery from './Components/Gallery'
 import Footer from './Components/Footer'
+import FAQ from './Components/FAQ'
+import GoogleReview from './Components/GoogleReview'
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
         <Gallery/>
         <Testimonals/>
         <Contact/>
+        <GoogleReview/>
+        <FAQ/>
         <Footer/>
         </div>
     </>

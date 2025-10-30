@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import menu_icon from '../assets/menu-icon.svg'
 import cross_icon from '../assets/cross-icon.svg'
+import { Phone } from 'lucide-react';
 
 const Navbar = () => {
   // State to control mobile menu visibility
@@ -22,7 +23,7 @@ const Navbar = () => {
     // Navbar container fixed at top with z-index for layering
     <div className="absolute md:fixed top-0 left-0 w-full z-50">
       {/* Main Navbar section */}
-      <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-gray-900 opacity-90 backdrop-blur-sm  shadow-2xl rounded-full mt-2 md:h-20">
+      <div className="flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-gray-900 opacity-90 backdrop-blur-sm  shadow-2xl md:h-20">
         {/* Logo or brand name */}
         <a href="#" className="text-white text-xl font-bold">DemoDomain</a>
 
@@ -30,15 +31,13 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-12 text-white text-xl font-bold">
           <a href="#home" className="cursor-pointer hover:text-gray-300 transition">Home</a>
           <a href="#about" className="cursor-pointer hover:text-gray-300 transition">About</a>
-          <a href="#features" className="cursor-pointer hover:text-gray-300 transition">Features</a>
           <a href="#testimonials" className="cursor-pointer hover:text-gray-300 transition">Testimonials</a>
+          <a href="#contact" className="cursor-pointer hover:text-gray-300 transition">Contact Us</a>
         </ul>
-
-        {/* Contact us button (visible only on larger screens) */}
-        <button className="hidden lg:block bg-white text-black px-8 py-2 rounded-full font-bold hover:bg-gray-200 transition text-xl">
-          <a href="#contact">Contact Us</a>
+        
+        
+          <a href="tel:9876543210" className="hidden lg:flex text-white gap-2 items-center font-bold hover:text-gray-300  text-xl"><Phone/>9876543210</a>
           
-        </button>
 
         {/* Mobile Menu Icon */}
         <img
