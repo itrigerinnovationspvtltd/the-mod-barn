@@ -23,7 +23,7 @@ const Home = () => {
         <h2 className='text-5xl sm:text-6xl md:text-[82px] inline-block max-w-5xl font-extrabold md:font-bold pt-20'>Explore smart spaces that fit your lifestyle</h2>
         <div className='space-x-6 mt-16 flex flex-col gap-3 md:block'>
             <button onClick={()=> setIsFormOpen(true)}
-            className='border bg-gray-800 opacity-80  border-white px-8 py-3 w-full rounded'>Request Consultation</button>
+            className='border bg-gray-800 opacity-80  border-white px-8 py-3 w-full md:w-60 rounded'>Request Consultation</button>
             <a href="#contact" className='bg-blue-500 px-8 py-3 rounded'>Contact Us</a>
         </div>
       </motion.div>
