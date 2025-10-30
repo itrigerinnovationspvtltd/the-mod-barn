@@ -66,13 +66,13 @@ const  Gallery = ()=>  {
       transition={{duration:1}}
       whileInView={{opacity:1, x:0}}
       viewport={{once: true}}
-    className="py-24 bg-slate-50" id='gallery'>
+    className="py-12 md:py-24 bg-slate-50" id='gallery'>
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-[#172128] mb-6">
+          <h2 className="text-2xl md:text-5xl font-bold text-[#172128] mb-6">
             Our Premium Murphy & Wall Bed Collection
           </h2>
-          <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
             Discover our expertly designed Murphy and wall beds that combine smart space-saving functionality with elegant style. Perfect for modern homes, our collection transforms any room into a multi-purpose living space with comfort and sophistication.
           </p>
         </div>

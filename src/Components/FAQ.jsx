@@ -48,7 +48,7 @@ function FAQ() {
   };
 
   return (
-    <section className="max-w-5xl mx-auto py-24 px-4">
+    <section className="max-w-5xl mx-auto pt-2 pb-6 md:py-24 px-4">
       <h2 className="text-2xl sm:text-5xl font-bold text-center mb-8 text-[#172128]">
         Frequently Asked Questions
       </h2>
@@ -63,7 +63,7 @@ function FAQ() {
               onClick={() => toggleFAQ(index)}
               className="flex justify-between items-center w-full text-left"
             >
-              <span className="text-lg sm:text-xl font-semibold text-[#172128]">
+              <span className="text-base md:text-xl font-semibold text-[#172128]">
                 {faq.question}
               </span>
               <FaChevronDown
@@ -74,7 +74,7 @@ function FAQ() {
             </button>
 
             <div
-              className={`mt-2 text-[#172128] overflow-hidden transition-all duration-300 ${
+              className={`mt-2 text-gray-500 text-sm md:text-xl overflow-hidden transition-all duration-300 ${
                 openIndex === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
               }`}
             >

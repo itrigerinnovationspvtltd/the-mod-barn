@@ -30,13 +30,13 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-12 text-white text-xl font-bold">
           <a href="#home" className="cursor-pointer hover:text-gray-300 transition">Home</a>
-          <a href="#about" className="cursor-pointer hover:text-gray-300 transition">About</a>
+          <a href="#gallery" className="cursor-pointer hover:text-gray-300 transition">Gallery</a>
           <a href="#testimonials" className="cursor-pointer hover:text-gray-300 transition">Testimonials</a>
           <a href="#contact" className="cursor-pointer hover:text-gray-300 transition">Contact Us</a>
         </ul>
         
         
-          <a href="tel:9876543210" className="hidden lg:flex text-white gap-2 items-center font-bold hover:text-gray-300  text-xl"><Phone/>9876543210</a>
+          <a href="tel:9876543210" className="hidden lg:flex text-white gap-2 items-center font-bold hover:text-gray-300  text-xl"><Phone/>Call Us</a>
           
 
         {/* Mobile Menu Icon */}
@@ -66,8 +66,7 @@ const Navbar = () => {
         {/* Mobile Navigation Links */}
         <ul className="flex flex-col items-center gap-5 mt-10 px-5 text-lg font-medium text-white">
           <a onClick={() => setShowMobileMenu(false)} href="#header" className="px-4 py-2 rounded-full inline-block hover:text-gray-300">Home</a>
-          <a onClick={() => setShowMobileMenu(false)} href="#about" className="px-4 py-2 rounded-full inline-block hover:text-gray-300">About</a>
-          <a onClick={() => setShowMobileMenu(false)} href="#projects" className="px-4 py-2 rounded-full inline-block hover:text-gray-300">Projects</a>
+          <a onClick={() => setShowMobileMenu(false)} href="#gallery" className="px-4 py-2 rounded-full inline-block hover:text-gray-300">Gallery</a>
           <a onClick={() => setShowMobileMenu(false)} href="#testimonials" className="px-4 py-2 rounded-full inline-block hover:text-gray-300">Testimonials</a>
           <a onClick={() => setShowMobileMenu(false)} href="#contact" className="px-4 py-2 rounded-full inline-block hover:text-gray-300">Contact Us</a>
         </ul>
