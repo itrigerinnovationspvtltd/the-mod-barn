@@ -23,7 +23,7 @@ const Navbar = () => {
     // Navbar container fixed at top with z-index for layering
     <div className="absolute md:fixed top-0 left-0 w-full z-50">
       {/* Main Navbar section */}
-      <div className="flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-gray-900 opacity-90 backdrop-blur-sm  shadow-2xl md:h-20">
+      <div className="flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-gray-900  backdrop-blur-sm  shadow-2xl md:h-20">
         {/* Logo or brand name */}
         <a href="#" className="text-white text-xl font-bold">DemoDomain</a>
 
