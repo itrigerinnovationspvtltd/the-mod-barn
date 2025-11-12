@@ -11,9 +11,10 @@ const Home = () => {
   return (
     <div
       id='home'
-      className='relative h-[150px] sm:h-[250px] md:h-[60vh] xl:h-[80vh] 
-                 md:mb-4 bg-cover bg-center flex items-center justify-center 
-                 w-full overflow-hidden shadow-xl mt-15 md:mt-0'
+      className='relative mt-14 md:mt-20 h-40 sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[500px] bg-cover bg-center flex items-center shadow-xl'
+      // h-[150px] sm:h-[250px] md:h-[60vh] xl:h-[80vh] 
+      //             bg-cover bg-center flex items-center justify-center 
+      //            w-full overflow-hidden shadow-xl mt-15 md:mt-0'
       style={{ backgroundImage: `url(${homeimg})` }}
     >
       {/* Lead Form Modal */}
@@ -62,7 +63,7 @@ const Home = () => {
         <img
           src={promoBanner}
           alt="Promotion Banner"
-          className='w-24 sm:w-52 lg:w-full h-auto object-contain drop-shadow-xl'
+          className='w-24 sm:w-52 md:w-60 lg:w-72 xl:w-full h-auto  object-contain rounded-full xl:rounded drop-shadow-xl'
         />
       </div>
     </div>

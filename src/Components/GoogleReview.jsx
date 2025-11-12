@@ -66,8 +66,8 @@ const reviews = [
 
 const GoogleReview = () => {
   return (
-    <section className="max-w-3xl md:max-w-6xl mx-auto py-16 sm:py-24 px-4">
-      <h2 className="text-center text-3xl md:text-5xl font-bold text-[#172128] mb-16">
+    <section className=" mx-auto py-16 sm:py-24 px-4 md:px-20 bg-linear-to-b from-gray-50 via-white to-gray-300 ">
+      <h2 className="text-center text-3xl md:text-5xl font-bold  text-[#172128] mb-16">
         What Our Customers Say on Google ⭐
       </h2>
       {/* Scrollable review container */}

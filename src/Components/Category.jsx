@@ -21,7 +21,7 @@ import sofa6 from '../assets/morphy/sofa6.webp'
 
 
 const Category = () => {
-  const [activeCategory, setActiveCategory] = useState("wallBeds");
+  const [activeCategory, setActiveCategory] = useState("office");
 
   const categories = [
     { id: "wallBeds", name: "Wall Beds" },
@@ -111,7 +111,7 @@ const Category = () => {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16">
+    <section className=" mx-auto px-4 py-16  bg-linear-to-b from-gray-300 via-white to-gray-400">
       {/* Heading */}
       <h2 className="text-2xl md:text-5xl font-bold text-center text-[#172128] mb-6">
         Explore the Details and Finishes Behind Our{" "}

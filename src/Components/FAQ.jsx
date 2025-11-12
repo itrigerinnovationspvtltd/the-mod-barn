@@ -48,12 +48,12 @@ function FAQ() {
   };
 
   return (
-    <section className="max-w-5xl mx-auto pt-2 pb-6 md:py-24 px-4">
+    <section className=" mx-auto pt-2 pb-6 md:py-24 px-4 bg-linear-to-b from-gray-300 via-white to-gray-50">
       <h2 className="text-2xl sm:text-5xl font-bold text-center mb-8 text-[#172128]">
         Frequently Asked Questions
       </h2>
 
-      <div className="space-y-4 sm:space-y-6">
+      <div className="space-y-4 sm:space-y-6 max-w-5xl mx-auto">
         {faqs.map((faq, index) => (
           <div
             key={index}

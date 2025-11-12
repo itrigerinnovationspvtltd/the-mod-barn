@@ -44,13 +44,13 @@ const Gallery = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="relative py-16 md:py-28 bg-linear-to-b from-gray-100 to-gray-50 overflow-hidden"
+      className="relative py-16 md:py-28 bg-linear-to-b from-gray-400 via-white to-gray-50 overflow-hidden"
     >
       {/* Decorative abstract shapes */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-200/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
 
-      <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
+      <div className=" mx-auto px-6 text-center relative z-10">
         {/* Headline */}
         <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 relative inline-block">
           Our Premium Murphy & Wall Bed Collection
