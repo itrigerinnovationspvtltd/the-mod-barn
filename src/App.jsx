@@ -1,7 +1,7 @@
 
 import Navbar from './Components/Navbar'
 import Home from './Components/Home'
-import Testimonals from './Components/Testimonials'
+// import Testimonals from './Components/Testimonials'
 import Contact from './Components/Contact'
 import Gallery from './Components/Gallery'
 import Footer from './Components/Footer'
@@ -18,9 +18,9 @@ function App() {
         <Home/>
         <Category/>
         <Gallery/>
-        <Testimonals/>
-        <Contact/>
+        {/* <Testimonals/> */}
         <GoogleReview/>
+        {/* <Contact/> */}
         <FAQ/>
         <Footer/>
         </div>
