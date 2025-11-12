@@ -22,7 +22,7 @@ const Home = () => {
         onClose={() => setIsFormOpen(false)}
       />
 
-      {/* 🌟 Text Section */}
+      {/*  Text Section */}
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 1.5 }}
@@ -36,7 +36,7 @@ const Home = () => {
         </h2>
 
         <div className='mt-5 md:mt-16 flex text-[10px] sm:text-lg sm:flex-row gap-2 sm:gap-4 
-                        pl-5 md:pl-20 lg:pl-32 xl:pl-52 items-center xl:max-w-5xl'>
+                        pl-16 md:pl-28 lg:pl-36 xl:pl-72 items-center xl:max-w-5xl'>
           <button
             onClick={() => setIsFormOpen(true)}
             className='border bg-gray-900 opacity-90 border-white py-1 px-2 sm:px-4 sm:py-2 
@@ -44,20 +44,20 @@ const Home = () => {
           >
             Request Consultation
           </button>
-          <a
+          {/* <a
             href="#contact"
             className='border border-white bg-gray-900 opacity-90 py-1 px-2 sm:px-4 sm:py-2 
                        md:px-8 md:py-3 rounded'
           >
             Contact Us
-          </a>
+          </a> */}
         </div>
       </motion.div>
 
-      {/* 🎯 Promotional banner on right side */}
+      {/* Promotional banner on right side */}
       <div
-        className='absolute right-0 bottom-5 md:bottom-12   
-                   flex justify-end items-end z-20 w-[40%] sm:w-[35%] md:w-[30%] lg:w-[25%]'
+        className='absolute right-0 bottom-5 md:bottom-0   
+                   flex justify-end items-end z-20 w-[40%] sm:w-[35%] md:w-[30%] lg:w-[35%]'
       >
         <img
           src={promoBanner}
