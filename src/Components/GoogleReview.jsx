@@ -98,6 +98,7 @@ const GoogleReview = () => {
               <img
                 src={item.profile}
                 alt={item.name}
+                loading="lazy"
                 className="w-12 h-12 rounded-full object-cover mr-3"
               />
               <div>
@@ -113,6 +114,7 @@ const GoogleReview = () => {
             <img
               src={item.productImage}
               alt="Installed Product"
+              loading="lazy"
               className="w-full h-40 object-cover px-2"
             />
 

@@ -117,7 +117,7 @@ const Gallery = () => {
                 key={index}
                 className="bg-white shadow-lg rounded-xl overflow-hidden transition hover:scale-[1.03]"
               >
-                <img src={item.img} alt={item.title} className="w-full h-64 object-cover" />
+                <img src={item.img} alt={item.title} className="w-full h-64 object-cover" loading="lazy" />
                 <div className="p-4">
                   <h3 className="text-xl font-semibold text-gray-800">{item.title}</h3>
                 </div>
@@ -138,7 +138,7 @@ const Gallery = () => {
                 key={index}
                 className="bg-white shadow-lg rounded-xl overflow-hidden transition hover:scale-[1.03]"
               >
-                <img src={item.img} alt={item.title} className="w-full h-64 object-cover" />
+                <img src={item.img} alt={item.title} className="w-full h-64 object-cover" loading="lazy" />
                 <div className="p-4">
                   <h3 className="text-xl font-semibold text-gray-800">{item.title}</h3>
                 </div>

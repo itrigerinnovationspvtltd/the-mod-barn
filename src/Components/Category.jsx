@@ -167,6 +167,7 @@ const Category = () => {
               <img
                 src={item.image}
                 alt={item.title}
+                loading="lazy"
                 className="w-full h-64 object-cover transform hover:scale-105 transition duration-500"
               />
               <div className="p-4">
