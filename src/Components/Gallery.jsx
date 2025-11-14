@@ -1,103 +1,155 @@
 import React from 'react'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+// set 1 images
+import img1 from '../assets/set1/CompactSpace-Saving-VeniceCanal.webp'
+import img2 from '../assets/set1/El-Segundo-Murphy.webp'
+import img3 from '../assets/set1/Modern-MurphyBed-Hollywood.webp'
+import img4 from '../assets/set1/Modern-Murphy-Bed-Malibu-Wave.webp'
+import img5 from '../assets/set1/Promotional-MurphyBed-Culver.webp'
+import img6 from '../assets/set1/Promotional-MurphyBed-Jori.webp'
 
-import img_1 from '../assets/gallery1.webp'
-import img_2 from '../assets/gallery2.webp'
-import img_3 from '../assets/gallery3.webp'
-import img_4 from '../assets/gallery4.webp'
-import img_5 from '../assets/gallery5.webp'
-import img_6 from '../assets/gallery6.webp'
-import img_7 from '../assets/gallery7.webp'
-import img_8 from '../assets/gallery8.webp'
-import img_9 from '../assets/gallery9.webp'
+// set 2 images
+import image1 from '../assets/set2/Berts-Window-View.webp'
+import image2 from '../assets/set2/Conrad.webp'
+import image3 from '../assets/set2/Malibu-Loft-Rowen.webp'
+import image4 from '../assets/set2/Mediterranian-Groove.webp'
+import image5 from '../assets/set2/Mod-Mix-Media.webp'
+import image6 from '../assets/set2/Newport-murphy-beddesign.webp'
+import image7 from '../assets/set2/Simplicity.webp'
+import image8 from '../assets/set2/The-Mod.webp'
+import image9 from '../assets/set2/Wilshire-Murphy-Bed2-1.webp'
+const classics = [
+  {
+    title: "Compact Space Saving-Venice Canal",
+    img: img1,
+  },
+  {
+    title: "El Segundo Murphy",
+    img: img2,
+  },
+  {
+    title: "Modern Murphy Bed- Hollywood",
+    img: img3,
+  },
+  {
+    title: "Modern Murphy Bed-Malibu Wave",
+    img: img4,
+  },
+  {
+    title: "Promotional Murphy Bed- Culver",
+    img: img5,
+  },
+  {
+    title: "Promotional Murphy Bed- Jori",
+    img: img6,
+  },
+]
 
-const galleryItems = [
+const customDesigns = [
   {
-    src: img_1,
-    alt: 'A Art Of Touch',
-    title: 'A Art Of Touch',
+    title: "Berts Window View ",
+    img: image1,
   },
   {
-    src: img_2,
-    alt: 'Beach Vibe-Art',
-    title: 'Beach Vibe-Art',
+    title: "Conrad",
+    img: image2,
   },
   {
-    src: img_3,
-    alt: 'Hollywood loft',
-    title: 'Hollywood loft',
+    title: "Malibu Loft - Rowen ",
+    img: image3,
   },
   {
-    src: img_4,
-    alt: 'Laguna Beach Design',
-    title: 'Laguna Beach Design',
+    title: "Mediterranian Groove",
+    img: image4,
   },
   {
-    src: img_5,
-    alt: 'Look Book Simplicity',
-    title: 'Look Book Simplicity',
+    title: "Mod-Mix Media",
+    img: image5,
   },
   {
-    src: img_6,
-    alt: 'Mediterranean Groove',
-    title: 'Mediterranean Groove',
+    title: "Newport murphy bed design",
+    img: image6,
   },
   {
-    src: img_7,
-    alt: 'Mod Marlo',
-    title: 'Mod Marlo',
+    title: "Simplicity",
+    img: image7,
   },
   {
-    src: img_8,
-    alt: 'Mod Wall Bed',
-    title: 'Mod Wall Bed',
+    title: "The Mod",
+    img: image8,
   },
   {
-    src: img_9,
-    alt: 'Topanga-Twins',
-    title: 'Topanga-Twins',
-  }
-];
+    title: "Wilshire Murphy Bed 2-1",
+    img: image9,
+  },
+]
 
-const  Gallery = ()=>  {
+const Gallery = () => {
   return (
-    <motion.section
-    initial={{opacity: 0, x:-200}}
-      transition={{duration:1}}
-      whileInView={{opacity:1, x:0}}
-      viewport={{once: true}}
-    className="py-24 bg-linear-to-b from-gray-400 via-white to-gray-50">
+    <motion.section id='gallery'
+      initial={{ opacity: 0, x: -200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      className="py-24 bg-linear-to-b from-gray-300 via-white to-gray-50"
+    >
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-20">
+        
+        {/* Header */}
+        <div className="text-center mb-10">
           <h2 className="text-5xl font-bold text-[#172128] mb-6">
             Our Premium Murphy & Wall Bed Collection
           </h2>
           <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
-            Discover our expertly designed Murphy and wall beds that combine smart space-saving functionality with elegant style. Perfect for modern homes, our collection transforms any room into a multi-purpose living space with comfort and sophistication.
+            Discover our expertly designed Murphy and wall beds that combine smart space-saving functionality with elegant style.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {galleryItems.map((item, index) => (
-            <div key={index} className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-2xl mb-4 shadow-xl hover:shadow-2xl transition-all duration-300">
-                <img
-                  src={item.src}
-                  alt={item.alt}
-                  width={400}
-                  height={300}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 from-slate-800/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+        {/* --- The Classics --- */}
+        <div className="max-w-7xl mx-auto sm:px-6 rounded-md mb-14">
+          <h2 className="text-3xl sm:text-5xl font-bold text-gray-900 mb-8">
+            The Classics
+          </h2>
 
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {classics.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white shadow-lg rounded-xl overflow-hidden transition hover:scale-[1.03]"
+              >
+                <img src={item.img} alt={item.title} className="w-full h-64 object-cover" />
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold text-gray-800">{item.title}</h3>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+
+        {/* --- Innovative Custom Designs --- */}
+        <div className="max-w-7xl mx-auto sm:px-6 rounded-md">
+          <h2 className="text-3xl sm:text-5xl font-bold text-gray-900 mb-8">
+            Innovative custom designs offering space saving, versatility, and style.
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {customDesigns.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white shadow-lg rounded-xl overflow-hidden transition hover:scale-[1.03]"
+              >
+                <img src={item.img} alt={item.title} className="w-full h-64 object-cover" />
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold text-gray-800">{item.title}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </motion.section>
-  );
+  )
 }
 
 export default Gallery

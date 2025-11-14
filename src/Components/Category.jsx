@@ -112,7 +112,7 @@ const Category = () => {
   };
 
   return (
-    <section className=" mx-auto px-4 py-16  bg-linear-to-b from-gray-300 via-white to-gray-400">
+    <section className=" mx-auto px-4 py-16  bg-linear-to-b from-gray-200 via-white to-gray-300">
       {/* Heading */}
       <h2 className="text-2xl md:text-5xl font-bold text-center text-[#172128] mb-6">
         Explore the Details and Finishes Behind Our{" "}
