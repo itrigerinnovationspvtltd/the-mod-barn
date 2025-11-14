@@ -27,11 +27,11 @@ const Footer = () => {
           
         </div>
         <div>
-          <div className="w-full md:w-52 mb-8 md:mb-0">
+          <div className="w-full md:w-56 mb-8 md:mb-0">
             <h3 className="text-white text-lg font-bold mb-4">Contact Us</h3>
             <ul className="flex flex-col gap-2 text-gray-400">
-              <a href="tel:9876543210" className="hover:text-white flex gap-3"><Phone/>9876543210</a>
-              <a href="mailto:demo@example.com" className="hover:text-white flex gap-3"> <Mail/>demo@gmail.com</a>
+              <a href="tel:310-849-5913" className="hover:text-white flex gap-3"><Phone/>310-849-5913</a>
+              <a href="mailto:wendy@themodbarn.com" className="hover:text-white flex gap-3"> <Mail/>wendy@themodbarn.com</a>
                <span className="flex gap-3 hover:text-white"><MapPin/> Bridgewood Florida 	United States</span>
             </ul>
           </div>

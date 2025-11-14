@@ -61,7 +61,8 @@ const LeadForm = ({ isOpen, onClose }) => {
                   Connect With Us
                 </h2>
                 <p className="text-gray-600 text-sm mb-4 text-center md:text-left">
-                  Let’s build your dream space together — we’d love to hear from you.
+                  Let’s build your dream space together — we’d love to hear from
+                  you.
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-3">
@@ -100,6 +101,21 @@ const LeadForm = ({ isOpen, onClose }) => {
                       name="Email"
                       required
                       placeholder="Enter your email"
+                      className="w-full border border-gray-300 rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-gray-600"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm text-gray-700 font-medium mb-1">
+                      ZIP Code
+                    </label>
+                    <input
+                      type="text"
+                      name="ZipCode"
+                      required
+                      placeholder="Enter your ZIP code"
+                      pattern="\d{5}"
+                      title="Please enter a 5-digit ZIP code"
                       className="w-full border border-gray-300 rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-gray-600"
                     />
                   </div>
