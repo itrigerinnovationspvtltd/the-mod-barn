@@ -2,7 +2,7 @@ import React from "react";
 import { FaStar, FaCheckCircle } from "react-icons/fa";
 import img_1 from '../assets/testimonial/Chen2.webp'
 import img_2 from '../assets/testimonial/Shannon.webp'
-import img_3 from '../assets/testimonial/Tim-CNC-combo-MurphyBed.webp'
+import img_3 from '../assets/testimonial/Tim-MurphyBed.webp'
 import img_4 from '../assets/testimonial/Kelly.webp'
 import img_5 from '../assets/testimonial/Morgan-MurphyBed.webp'
 import img_6 from '../assets/testimonial/Kinzy-ADU.webp'
