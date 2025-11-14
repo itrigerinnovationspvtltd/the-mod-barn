@@ -1,111 +1,112 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import morphy1 from '../assets/morphy/Morphy1.webp'
-import morphy2 from '../assets/morphy/Morphy2.jpg'
-import morphy3 from '../assets/morphy/Morphy3.avif'
-import morphy4 from '../assets/morphy/Morphy4.webp'
-import morphy5 from '../assets/morphy/Morphy5.jpg'
-import morphy6 from '../assets/morphy/Morphy6.webp'
-import off1 from '../assets/morphy/office1.jpg'
-import off2 from '../assets/morphy/office2.jpg'
-import off3 from '../assets/morphy/office3.jpg'
-import off4 from '../assets/morphy/office4.jpg'
-import off5 from '../assets/morphy/office5.jpg'
-import off6 from '../assets/morphy/office6.jpg'
-import sofa1 from '../assets/morphy/sofa1.webp'
-import sofa2 from '../assets/morphy/safa2.jpg'
-import sofa3 from '../assets/morphy/sofa3.jpg'
-import sofa4 from '../assets/morphy/sofa4.webp'
-import sofa5 from '../assets/morphy/sofa5.jpeg'
-import sofa6 from '../assets/morphy/sofa6.webp'
+import adu1 from '../assets/adu/ADU-Hollywood.webp'
+import adu2 from '../assets/adu/ADU-Malibu.webp'
+
+import off1 from '../assets/office/Flex-Murphy-Office.webp'
+import off2 from '../assets/office/Jax-Murphy-Office.webp'
+import off3 from '../assets/office/Kai-Murphy-Office.webp'
+import off4 from '../assets/office/Newport-Murphy-Office.webp'
+import off5 from '../assets/office/Winter-Murphy-Office.webp'
+import sofa1 from '../assets/sofa/Big-Blue-Murphy-Sofa.webp'
+import sofa2 from '../assets/sofa/Coastal-Nook.webp'
+import sofa3 from '../assets/sofa/El-Segundo-MurphySofa.webp'
+import sofa4 from '../assets/sofa/Malibu-Loft-Rowen2-1.webp'
+import sofa5 from '../assets/sofa/Malibu-MurphyBed-Sofa.webp'
+import sofa6 from '../assets/sofa/Malibu-MurphyTV-Sofa.webp'
+import sofa7 from '../assets/sofa/Mod-Mason-Murphy-Sofa.webp'
+import sofa8 from '../assets/sofa/Mod-Stacy-Sofa.webp'
+import sofa9 from '../assets/sofa/River-Murphy-Sofa.webp'
+import sofa10 from '../assets/sofa/SantaMaria.webp'
+import sofa11 from '../assets/sofa/Somoya-MurphyBed.webp'
 
 
 const Category = () => {
   const [activeCategory, setActiveCategory] = useState("office");
 
   const categories = [
-    { id: "wallBeds", name: "Wall Beds" },
-    { id: "office", name: "Office" },
-    { id: "sofaCombos", name: "Sofa Combos" },
+    { id: "office", name: "Office Combo" },
+    { id: "sofaCombos", name: "Sofa Combo" },
+    { id: "adu", name: "ADU Space" },
   ];
 
   const products = {
-    wallBeds: [
+    adu: [
       {
-        image:morphy1,
-        title: "Classic Murphy Bed",
+        image:adu1,
+        title: "ADU Hollywood",
       },
       {
-        image:morphy2,
-        title: "Modern Wall Bed with Storage",
-      },
-      {
-        image:morphy3   ,
-        title: "Compact Space-Saving Bed",
-      },
-      {
-        image:morphy4   ,
-        title: "Compact Space-Saving Bed",
-      },
-      {
-        image:morphy5   ,
-        title: "Compact Space-Saving Bed",
-      },
-      {
-        image:morphy6   ,
-        title: "Compact Space-Saving Bed",
+        image:adu2,
+        title: "ADU Malibu",
       },
     ],
     office: [
       {
         image: off1,
-        title: "Custom Office Workspace",
+        title: "Flex Murphy Office",
       },
       {
         image:off2,
-        title: "Foldable Desk System",
+        title: "Jax Murphy Office",
       },
       {
         image:off3,
-        title: "Home Office with Wall Storage",
+        title: "Kai-Murphy Office",
       },
       {
         image:off4,
-        title: "Home Office with Wall Storage",
+        title: "Newport Murphy Office",
       },
       {
         image:off5,
-        title: "Home Office with Wall Storage",
-      },
-      {
-        image:off6,
-        title: "Home Office with Wall Storage",
+        title: "Winter Murphy Office",
       },
     ],
     sofaCombos: [
       {
         image:sofa1,
-        title: "Murphy Bed with Sofa Combo",
+        title: "Big Blue Murphy Sofa",
       },
       {
         image:sofa2,
-        title: "Pull-down Bed with Sofa",
+        title: "Coastal Nook",
       },
       {
         image:sofa3,
-        title: "Convertible Sofa Wall Bed",
+        title: "El Segundo Murphy Sofa",
       },
       {
         image:sofa4,
-        title: "Convertible Sofa Wall Bed",
+        title: "Malibu Loft Rowen 2-1",
       },
       {
         image:sofa5,
-        title: "Convertible Sofa Wall Bed",
+        title: "Malibu Murphy Bed Sofa",
       },
       {
         image:sofa6,
-        title: "Convertible Sofa Wall Bed",
+        title: "Malibu Murphy TV Sofa",
+      },
+      {
+        image:sofa7,
+        title: "Mod Mason Murphy Sofa",
+      },
+      {
+        image:sofa8,
+        title: "Mod Stacy Sofa",
+      },
+      {
+        image:sofa9,
+        title: "River Murphy Sofa",
+      },
+      {
+        image:sofa10,
+        title: "Santa Maria",
+      },
+      {
+        image:sofa11,
+        title: "Somoya Murphy Bed",
       },
     ],
   };
@@ -144,8 +145,17 @@ const Category = () => {
           exit={{ opacity: 0, y: -40 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
           id="category"
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
         >
+          {/*ADDED HEADING FOR ADU CATEGORY*/}
+    {activeCategory === "adu" && (
+      <div className="col-span-full text-center mb-2">
+        <h3 className="text-lg md:text-2xl font-bold text-gray-900">
+         Accessory Dwelling Unit
+        </h3>
+      </div>
+    )}
+
           {products[activeCategory].map((item, index) => (
             <motion.div
               key={index}
